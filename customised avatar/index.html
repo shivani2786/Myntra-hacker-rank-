@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Customization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <h1>Avatar Customization</h1>
+        <div class="avatar-container">
+            <div id="avatar" class="avatar">
+                <div id="hair" class="hair"></div>
+                <div id="eyes" class="eyes">
+                    <img id="avatar-image" src="" alt="Customized Avatar" class="avatar-img">
+                    <!-- <div></div>
+                    <div></div> -->
+                </div>
+                <!-- <div id="clothing" class="clothing"></div> -->
+            </div>
+            <div id="purchase-section" class="purchase-section">
+                <!-- <img id="avatar-image" src="" alt="Customized Avatar" class="avatar-img"> -->
+                <br><br>
+                <a id="purchase-link" href="#" target="_blank" class="purchase-link">Purchase Avatar</a>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="custom-select-container">
+                <label for="hair-style">Hair Style:</label>
+                <select id="hair-style" class="custom-select">
+                    <option value="">Select Hair Style</option>
+                    <option value="short">Short</option>
+                    <option value="long">Long</option>
+                    <option value="curly">Curly</option>
+                </select>
+            </div>
+            <div class="custom-select-container">
+                <label for="eye-color">Eye Color:</label>
+                <input type="color" id="eye-color" value="#000000">
+            </div>
+            <div class="custom-select-container">
+                <label for="clothing-style">Clothing Style:</label>
+                <select id="clothing-style" class="custom-select">
+                    <option value="">Select Clothing Style</option>
+                    <option value="traditional">Traditional</option>
+                    <option value="western">Western</option>
+                </select>
+            </div>
+            <div class="custom-select-container">
+                <label for="glasses-style">Glasses:</label>
+                <select id="glasses-style" class="custom-select">
+                    <option value="">Select Glasses</option>
+                    <option value="none">None</option>
+                    <option value="round">Round</option>
+                    <option value="square">Square</option>
+                </select>
+            </div>
+            <div class="custom-select-container">
+                <label for="skin-tone">Skin Tone:</label>
+                <select id="skin-tone" class="custom-select">
+                    <option value="">Select Skin Tone</option>
+                    <option value="light">Light</option>
+                    <option value="medium">Medium</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </div>
+            <div class="custom-select-container">
+                <label for="holidays">Holiday:</label>
+                <select id="holidays" class="custom-select">
+                    <option value="">Select Holiday</option>
+                    <option value="none">None</option>
+                    <option value="christmas">Christmas</option>
+                    <option value="halloween">Halloween</option>
+                    <option value="party">Party</option>
+                </select>
+            </div>
+            <div class="custom-select-container">
+                <label for="season">Season:</label>
+                <select id="season" class="custom-select">
+                    <option value="">Select Season</option>
+                    <option value="none">None</option>
+                    <option value="summer">Summer</option>
+                    <option value="winter">Winter</option>
+                    <option value="rainy">Rainy</option>
+                </select>
+            </div>
+            <button onclick="customizeAvatar()" class="custom-button">Customize Avatar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outfit Suggestor App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Outfit Suggestor App</h1>
+        <form id="outfitForm">
+            <label for="mood">Mood:</label>
+            <select id="mood" name="mood" required>
+                <option value="" disabled selected>Select your mood</option>
+                <option value="Happy">Happy</option>
+                <option value="Sad">Sad</option>
+                <option value="Excited">Excited</option>
+                <option value="Relaxed">Relaxed</option>
+            </select>
+            
+            <label for="weather">Weather:</label>
+            <select id="weather" name="weather" required>
+                <option value="" disabled selected>Select the weather</option>
+                <option value="Sunny">Sunny</option>
+                <option value="Rainy">Rainy</option>
+                <option value="Snowy">Snowy</option>
+                <option value="Cloudy">Cloudy</option>
+            </select>
+            
+            <label for="occasion">Occasion:</label>
+            <select id="occasion" name="occasion" required>
+                <option value="" disabled selected>Select the occasion</option>
+                <option value="Casual">Casual</option>
+                <option value="Formal">Formal</option>
+                <option value="Party">Party</option>
+                <option value="Sports">Sports</option>
+            </select>
+            
+            <button type="submit">Get Outfit Suggestions</button>
+        </form>
+        
+        <div id="outfitSuggestions">
+            <!-- Outfit suggestions will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
